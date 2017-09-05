@@ -491,7 +491,7 @@ XenClient.UI.VMModel = function(vm_path) {
         }
 
         return dojo.every(self.get_virtualDisks(), function(disk) {
-            return disk.snapshot == XenConstants.DiskSnapshotMode.RESET;
+            return (disk.snapshot == XenConstants.DiskSnapshotMode.RESET) || (disk.snapshot == XenConstants.DiskSnapshotMode.RESETENC);
         });
     };
 

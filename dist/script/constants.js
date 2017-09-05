@@ -152,6 +152,7 @@ XenClient.Resource.VMStates = {
 };
 
 XenClient.Resource.DiskSnapshotMode = {
+    RESETENC            : "temporary-encrypted",
     RESET               : "temporary",
     NONE                : "none"
 };
